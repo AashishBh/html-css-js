@@ -12,13 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap" rel="stylesheet">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="assets/logo.png" /></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -27,13 +31,32 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt eius iusto ea obcaecati vero, quidem exercitationem consectetur cum reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates modi saepe, sunt architecto deserunt accusamus sapiente, eveniet obcaecati aspernatur quisquam minus aliquid ea! Natus ratione unde suscipit, earum quas animi tempore nostrum consequuntur quo rem eligendi dolores nihil quod? Sit voluptate deleniti ullam soluta vel architecto necessitatibus illo porro! Laudantium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt eius iusto ea obcaecati vero,
+                quidem exercitationem consectetur cum reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Voluptates modi saepe, sunt architecto deserunt accusamus sapiente, eveniet obcaecati aspernatur
+                quisquam minus aliquid ea! Natus ratione unde suscipit, earum quas animi tempore nostrum consequuntur
+                quo rem eligendi dolores nihil quod? Sit voluptate deleniti ullam soluta vel architecto necessitatibus
+                illo porro! Laudantium?</p>
             <a href="">Visit us to know more</a>
         </div>
     </section>
+    <!-- javascript starts here  -->
+    <script>
+        let menu = document.getElementById("navLink");
+        function showMenu(){
+            menu.style.display = 'block';
+            menu.style.right = '0';
+            
+        }
+        function hideMenu(){
+            menu.style.right = '-250px';
+            menu.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
