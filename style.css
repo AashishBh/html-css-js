@@ -112,7 +112,7 @@ nav img {
         font-size: 30px;
     }
     .nav-links{
-        background-color: teal;
+        background-color: rgb(224, 72, 72);
         /* margin-right: -40px; */
         min-height: 100vh;
         z-index: 2;
